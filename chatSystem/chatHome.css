@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins' sans-serif;
+}
+body {
+    font-family: Arial;
+    color: white;
+  }
+/* Nav */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(54, 77, 134);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  /* Container */
+
+.flex-container {
+    /* display: flex;
+     */
+}
+
+.flex-child1 {
+    width: 70%;
+        
+        background: rgb(95, 99, 221);
+        
+        border: 1px solid rgb(255, 0, 242);
+}  
+
+.flex-child2 {
+    
+        /* height: 100vh; */
+        background: rgb(12, 5, 44);
+       
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+}  
+
+
+
+  /* chat2 */
+  .speech-wrapper{
+    padding: 5px 6px;
+     width: 60%;
+     /* border: 2px solid red; */
+     height: 100vh;
+     position: relative;
+     overflow: auto;
+    }
+  .chatbox {
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 50%;
+    margin-top:0px;   
+    background: linear-gradient(rgb(255, 143, 178) 0%, rgb(167, 151, 255) 50%, rgb(0, 229, 255) 100%);
+    color: #FFF;
+    position: relative;
+    border-radius: 10px;  
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    box-shadow: 0 8px 6px -6px black;
+    width: 35%;
+    backdrop-filter: blur(10px);
+  
+  
+  
+  }
+  .chatbox_other{
+    height:auto;
+    padding: 5px;
+    margin-left: 60%;
+    margin-right: 5px;
+    margin-top:0px;   
+    background: linear-gradient(rgb(255, 143, 178) 0%, rgb(167, 151, 255) 50%, rgb(0, 229, 255) 100%);
+    color: #000;
+    position: relative;
+    border-radius: 10px;  
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    box-shadow: 0 8px 6px -6px black;
+    /* border: 2px solid red; */
+    backdrop-filter: blur(10px);
+  
+  
+  }
+  
+        .name_other{
+           font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #1970b0;
+        }
+         .name_other1{
+           font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #ba006e;
+        }
+         .name_other2{
+           font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #007670;
+        }
+         .name_other3{
+           font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #3b0256;
+        }
+         .name_other4{
+           font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #00512b;
+        }
+         .name_other5{
+           font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #a91024;
+        }
+           .name_other6{
+           font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #b8471b;
+        }
+           .name_other7{
+           font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #7f1c7d;
+        }
+  
+  .timestamp_other{
+          font-size: 11px;
+          position: absolute;
+          bottom: 0px;
+          right: 10px;
+          text-transform: uppercase; color: #999
+  }       
+  .timestamp{
+          font-size: 11px;
+          position: absolute;
+          bottom: 0px;
+          right: 10px;
+          text-transform: uppercase; color: #fff
+        }
+  /* speech bubble 13 */
+        .name{
+          font-weight: 600;
+          font-size: 12px;
+          margin: 0px 0px  9px;
+          color: #ffffff;
+        }
+  
+  
+  .triangle.left-top:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -10px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: #DCDCDC transparent transparent transparent;
+    z-index: -1;
+  }
+  
+  .triangle.right-top:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: auto;
+      right: -10px;
+      top: 0;
+      bottom: auto;
+      border: 32px solid;
+      border-color: #075698 transparent transparent 
+        transparent;
+        z-index: -1;
+  }   
+     .alt{
+        margin: 0 0 0 60px;
+      }
+
+
+/* send part */
+      
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+/* The popup chat - hidden by default */
+.chat-popup {
+
+ 
+ 
+}
+
+/* Add styles to the form container */
+.form-container {
+ width: 60%;
+
+  background-color: rgba(33, 33, 33, 0.277);
+  /* border:1px solid red; */
+    position: fixed;
+    bottom: 1px;
+    
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 92%;
+  padding: 10px;
+  /* margin: 5px 0 22px 0; */
+  border: none;
+  background: #52eaea58;
+  resize: none;
+  /* min-height: 100px; */
+}
+.form-container{
+left: 0;
+  display:flex ;
+  justify-content:  space-between;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: rgb(122, 209, 214);
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #12ed86;
+  color: rgb(14, 13, 13);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  
+  
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 122, 122, 0.638); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
